@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+    { "src": "api/duksungAI.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+    { "src": "/api/duksungAI", "dest": "api/duksungAI.js" }
+    ]
+}
