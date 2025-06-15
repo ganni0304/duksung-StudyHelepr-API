@@ -6,9 +6,9 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default async function handler(req, res) {
-  try{
+  const allowedOrigin = "https://ganni0304.github.io"
 
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "allowedOrigin");
   res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   if(!question || !difficulty || !understandingLevel){
     return res.status(400).json({error:"question과 difficulty와 understandingLevel이 필요합니다."});
   }
-
+try{
   // ✨ 공통 프롬프트 생성 함수
   const makePrompt = (question, difficulty, understandingLevel) => `
 [학생의 질문]
