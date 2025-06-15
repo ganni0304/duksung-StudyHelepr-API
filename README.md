@@ -1,7 +1,7 @@
 # 인터넷기초[04] 과제2 - 나만의 인공지능 서비스 (백엔드)
 
-## 🛠️ 개요
-이 저장소는 **Study Helper** 서비스를 위한 **백엔드 API**입니다.  
+## 개요
+이 저장소는 **[Study Helper](https://ganni0304.github.io/duksung-studyhelper/)** 서비스를 위한 **백엔드 API**입니다.  
 프론트엔드로부터 요청을 받아 **Gemini API**를 호출하고,  
 생성된 **LLM 답변 결과**를 다시 프론트엔드에 응답합니다.
 
